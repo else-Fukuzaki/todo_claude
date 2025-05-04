@@ -91,11 +91,6 @@ input:focus, select:focus {
 #task-date, #edit-task-date {
     flex: 1;
     min-width: 140px;
-    appearance: none;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%234a6ee0' stroke-width='2'><rect x='3' y='4' width='18' height='18' rx='2' ry='2'></rect><line x1='16' y1='2' x2='16' y2='6'></line><line x1='8' y1='2' x2='8' y2='6'></line><line x1='3' y1='10' x2='21' y2='10'></line></svg>");
-    background-repeat: no-repeat;
-    background-position: right 8px center;
-    background-size: 16px;
 }
 
 #task-priority, #edit-task-priority {
@@ -176,16 +171,16 @@ button:hover {
 }
 
 .task-date::before {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
+    content: "📅";
     margin-right: 0.25rem;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23777' stroke-width='2'><rect x='3' y='4' width='18' height='18' rx='2' ry='2'></rect><line x1='16' y1='2' x2='16' y2='6'></line><line x1='8' y1='2' x2='8' y2='6'></line><line x1='3' y1='10' x2='21' y2='10'></line></svg>");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    vertical-align: middle;
+}
+
+/* Only for mobile devices, use emoji instead of SVG */
+@media screen and (max-width: 600px) {
+    .task-date::before {
+        content: "📅";
+        margin-right: 0.25rem;
+    }
 }
 
 .task-priority {
