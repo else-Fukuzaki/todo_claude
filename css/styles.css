@@ -52,6 +52,7 @@ h1 {
     cursor: pointer;
     border-radius: 20px;
     transition: all 0.3s;
+    color: #C0C0C0;
 }
 
 .filter-btn.active, .filter-btn:hover {
