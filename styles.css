@@ -58,7 +58,7 @@ h1 {
 .filter-btn.active,
 .filter-btn:hover {
   background-color: var(--primary-color);
-  color: white;
+  color: rgb(103, 100, 100);
   border-color: var(--primary-color);
 }
 
