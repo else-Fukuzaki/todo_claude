@@ -292,4 +292,9 @@ button:hover {
     .task-content {
         max-width: 70%;
     }
+    
+    /* スマホ表示時のフィルターボタンの文字色を常に #808080 に設定 */
+    .filter-btn, .filter-btn.active, .filter-btn:hover {
+        color: #808080;
+    }
 }
